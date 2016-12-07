@@ -29,3 +29,25 @@ Group1: Aditya, Rajeev and Ganesh  ----  D8 BF
 			update
 		dependencies
 		
+
+employee
+emp id - primary key, auto gen,
+emp name - char text field
+emp email - char
+designation  - char textfield
+date of Joining - date
+DOB - date
+dept id - foreign key of dept
+salary - int
+status - 1,0
+created date - timestamp
+updated date - timestamp
+
+
+dept
+dept id - primary key, auto gen, 
+dept name - char text field
+skills required char, text area
+status - 1,0
+created date - timestamp
+updated date - timestamp
