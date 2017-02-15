@@ -1,0 +1,9 @@
+name: Payroll for Employees
+type: module
+description: 'for employee data CRUD operations'
+package: HR
+#dependencies:
+version: '1.0'
+core: '8.x'
+project: 'payroll'
+#configure:my_payroll.admin_settings
