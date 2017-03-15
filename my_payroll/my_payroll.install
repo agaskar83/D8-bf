@@ -1,0 +1,51 @@
+<?php
+
+function my_payroll_schema() {
+	$schema['my_payroll'] = array(
+	'fields' => array(
+	'empid'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+			),
+	'name' => array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+			),
+	'email' => array(
+		'type' => 'varchar',
+		'length' => 30,
+		'not null' => TRUE,
+			),
+	'gender' => array(
+		'type' => 'varchar',
+		'length' => 1,
+		'not null' ==> TRUE,
+			),
+	'dob' => array(
+		'type' => 'varchar',
+		'mysql_type' => 'datetime',
+		'not null' => TRUE,
+			),
+	'salary' => array(
+		'type' => 'number',
+		'length' => 7,
+		'not null' => TRUE,	
+			),
+	'created_date' => array(
+		'type' => 'varchar',
+		'mysql_type' => 'datetime',
+		'not null' => TRUE,
+			),
+	'updated_date' => array(
+		'type' => 'varchar',
+		'mysql_type' => 'datetime',
+		'not null' => TRUE,
+			),
+		),
+	'primary key' => array('empid'),
+	);
+	
+	return $schema;
+	
+}
