@@ -32,6 +32,11 @@ function my_payroll_schema() {
 		'length' => 7,
 		'not null' => TRUE,	
 			),
+	'status' => array(
+        'type' => 'char',
+		'length' => 1,
+        'not null' => TRUE,
+			),
 	'created_date' => array(
 		'type' => 'varchar',
 		'mysql_type' => 'datetime',
@@ -46,6 +51,39 @@ function my_payroll_schema() {
 	'primary key' => array('empid'),
 	);
 	
+	$schema['department'] = array(
+	'fields' => array(
+	'dept_id'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+			),
+	'dept_name' => array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+			),
+	'skills' => array(
+        'type' => 'textarea',
+        'not null' => TRUE,
+			),
+	'status' => array(
+        'type' => 'char',
+		'length' => 1,
+        'not null' => TRUE,
+			),
+	'created_date' => array(
+		'type' => 'varchar',
+		'mysql_type' => 'datetime',
+		'not null' => TRUE,
+			),
+	'updated_date' => array(
+		'type' => 'varchar',
+		'mysql_type' => 'datetime',
+		'not null' => TRUE,
+			),
+		),
+	'primary key' => array('dept_id'),
+	);
 	return $schema;
-	
 }
+
