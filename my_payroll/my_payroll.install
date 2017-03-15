@@ -20,7 +20,7 @@ function my_payroll_schema() {
 	'gender' => array(
 		'type' => 'varchar',
 		'length' => 1,
-		'not null' ==> TRUE,
+		'not null' => TRUE,
 			),
 	'dob' => array(
 		'type' => 'varchar',
